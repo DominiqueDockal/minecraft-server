@@ -10,3 +10,6 @@ server.jar
 .DS_Store
 Thumbs.db
 *.swp
+
+# Environment
+.env

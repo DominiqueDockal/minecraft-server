@@ -7,5 +7,5 @@ services:
     volumes:
       - ./data:/data
     environment:
-      EULA: "true"
+      EULA: "${EULA}"
     restart: unless-stopped
