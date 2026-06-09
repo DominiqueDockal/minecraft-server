@@ -1,0 +1,15 @@
+services:
+  mc-server:
+    build: .
+    container_name: mc-server
+    ports:
+      - "${HOST_PORT}:25565"
+    volumes:
+      - mc-data:/data
+    environment:
+      EULA: "${EULA}"
+      MEMORY: "${MEMORY}"
+    restart: unless-stopped
+
+volumes:
+  mc-data:
