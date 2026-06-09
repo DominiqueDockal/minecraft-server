@@ -1,0 +1,11 @@
+services:
+  mc-server:
+    build: .
+    container_name: mc-server
+    ports:
+      - "8888:25565"
+    volumes:
+      - ./data:/data
+    environment:
+      EULA: "true"
+    restart: unless-stopped
