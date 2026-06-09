@@ -5,8 +5,11 @@ services:
     ports:
       - "${HOST_PORT}:25565"
     volumes:
-      - ./data:/data
+      - mc-data:/data
     environment:
       EULA: "${EULA}"
       MEMORY: "${MEMORY}"
     restart: unless-stopped
+
+volumes:
+  mc-data:

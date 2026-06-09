@@ -1,5 +1,4 @@
 # Minecraft server runtime data
-data/
 logs/
 *.log
 
