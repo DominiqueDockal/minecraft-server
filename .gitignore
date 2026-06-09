@@ -1,0 +1,12 @@
+# Minecraft server runtime data
+data/
+logs/
+*.log
+
+# Minecraft server jar
+server.jar
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.swp
